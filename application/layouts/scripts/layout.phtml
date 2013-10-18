@@ -1,0 +1,20 @@
+<?php 
+$this->headMeta()->appendHttpEquiv('Content-Type', 'text/html;charset=utf-8');
+$this->headTitle()->setSeparator(' - ');
+$this->headTitle('MeuCampeonato');
+
+echo $this->doctype(); ?>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-br" lang="pt-br" >
+<head>
+    <?php echo $this->headMeta(); ?> 
+    <?php echo $this->headTitle(); ?>
+    <?php echo $this->headLink()->prependStylesheet($this->baseUrl().'/css/teaser.css'); ?> 
+    <?php echo $this->headScript()->appendFile($this->baseUrl().'/js/teaser.js'); ?>
+</head>
+<body>
+    <div id="logo" align="center">
+        <img src="<?php echo $this->baseUrl().'/images/LogoMC.png';?>">
+    </div>
+    <?php echo $this->layout()->content; ?>
+</body>
+</html>

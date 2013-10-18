@@ -1,0 +1,27 @@
+
+<div id="progresso" align="center">
+        <img src="images/progresso.png">
+        <span class="andamento"> Estádio em Contrução </span>
+        <span class="percentagem"> 20% completo </span><br><br><br><br><br><br>
+        <span class="aguarde"> O campeonato é você quem faz. Aguarde... </span>
+</div>
+    <div class="emailDiv" align="center">
+        <!--email/enviar field-->
+        <div class="FieldOutline" id="FieldOutline">
+            <div class="FieldInline">
+                <?php
+                $this->form->setAction($this->url());
+                echo $this->form;
+                ?>
+            </div>
+        </div>
+        <!--end email/enviar field-->
+        <div class="<?php echo "confirmation".$this->confirmation['confirm']?>" align="center">
+            <?php echo $this->confirmation['message'];?>
+        </div>
+    </div>
+<!--<div id="social" align="center">
+        Twitter 
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+        Facebook
+</div>-->
